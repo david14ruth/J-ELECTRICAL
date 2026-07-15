@@ -1,0 +1,224 @@
+@keyframes slide_Side{
+    from {
+         transform: translateX(0)
+    }
+    to{
+        
+         transform: translateX(50%)
+        
+    }
+   
+}
+@keyframes img-hide-show{
+    0% {
+        opacity: 1;
+        transition: 0.5s;
+        transform: translateX(0)
+    }
+    50%{
+        
+        opacity: 0.5;
+        transition: 0.5s;
+        transform: translateX(20%)
+    }
+    50%{
+        opacity: 0.5;
+        transition: 0.5s;
+        transform: translateX(20%)
+    }
+   
+}
+.slide-side{
+    animation: slide_Side;
+    animation-delay: 5s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.inline-block{
+   display: inline-block;
+   z-index: 10;
+}
+.h1{
+    font-size: 7.5rem !important;
+    z-index: 10;
+}
+.h2{
+    font-size: 3.5rem !important;
+    z-index: 10;
+}
+.box-shadow{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+}
+.slider{
+    position:relative;
+    width:705px;
+    height:550px;
+}
+.slide{
+    position:absolute;
+    width:785px;
+    height:550px;
+    opacity:0;
+    transform:translateX(20%);
+    transition:opacity 1s, transform 1s;
+}
+.slide-2{
+    position:absolute;
+    width:585px;
+    height:750px;
+    opacity:0;
+    transform:translateX(20%);
+    transition:opacity 1s, transform 1s;
+    border-radius: 35%;
+    border: 5px double rgb(255, 255, 255);
+}
+.slider-2{
+    position:relative;
+    width:705px;
+    height:780px;
+}
+.img{
+    width:405px !important;
+    height:500px !important;
+}
+
+.slide.active{
+    opacity:1;
+    transform:translateX(0);
+}
+.slide-2.active{
+    opacity:1;
+    transform:translateX(0);
+}
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.text{
+    color:white;
+}
+.padding{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem ;
+    padding-right: 1.5rem ;
+}
+.bg-blue{
+    background: linear-gradient(to right, rgb(219, 222, 222),rgb(141, 225, 187)) !important;
+}
+.width-heigh{
+    width: 100% !important;
+    height: auto !important;
+}
+.border-black-{
+    border: 2px solid rgb(124, 123, 123) !important;
+    border-radius: 3.5%;
+    overflow: hidden;
+    animation: img-hide-show;
+    animation-duration: 6.5s;
+    animation-iteration-count: infinite;
+}
+.space{
+    width: 45rem;
+    height: auto;
+}
+
+.inline-table{
+    display: inline-block;
+}
+.text-shadow{
+    text-shadow: 5px 7px 10px rgb(136, 136, 136);
+}
+.text-shadow-1{
+    text-shadow: 7px 7px 15px rgb(0, 0, 0);
+    color: rgb(172, 240, 194) !important;
+}
+.margin-bottom{
+    margin-top: 3.2rem;
+}
+.img-bg{
+    background-color: rgb(49, 45, 45);
+}
+.text-color{
+    color: rgb(255, 179, 39) !important;
+}
+.text-color-1{
+    color: rgb(255, 255, 255) !important;
+}
+.text-align{
+    text-align: center;
+}
+.img-1{
+    width:200px !important;
+    height:200px !important;
+}
+.box-shadow-1{
+    box-shadow: -2px 0px 15px rgb(0, 0, 0);
+}
+.text-color-2{
+    color: rgb(43, 82, 68) !important;
+    text-shadow: 4px 0px 5px rgb(47, 46, 46);
+    font-size: 5.5rem;
+}
+.text-align-2{
+    text-align: left;
+}
+.text-color-3{
+    color: rgb(32, 58, 49) !important;
+    text-shadow: 4px 0px 5px rgb(21, 20, 20);
+    font-size: 1.2rem;
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.whatsapp-btn{
+    animation: pulse 2s infinite;
+}
+.whatsapp-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 70px;
+    height: 70px;
+
+    background-color: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+    z-index: 9999;
+
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover{
+    transform: scale(1.1);
+    color:#25D366;
+    background-color: #ffffff !important;
+}
+
+.whatsapp-btn i{
+    font-size: 40px;
+}
