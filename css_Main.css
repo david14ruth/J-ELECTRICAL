@@ -28,6 +28,13 @@
     }
    
 }
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+   -ms-overflow-style: none;  /* Internet Explorer & Edge */
+    scrollbar-width: none;
+}
 .slide-side{
     animation: slide_Side;
     animation-delay: 5s;
@@ -38,12 +45,12 @@
    display: inline-block;
    z-index: 10;
 }
-.h1{
-    font-size: 7.5rem !important;
+.display-1{
+    font-size: 7.5rem;
     z-index: 10;
 }
-.h2{
-    font-size: 3.5rem !important;
+.h4{
+    font-size: 3.5rem;
     z-index: 10;
 }
 .box-shadow{
@@ -221,4 +228,8 @@
 
 .whatsapp-btn i{
     font-size: 40px;
+}
+.fix{
+    position: fixed !important;
+    width: 100%;
 }
