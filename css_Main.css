@@ -233,3 +233,15 @@ body {
     position: fixed !important;
     width: 100%;
 }
+
+@media (min-width:250px) and (max-width:450px){
+
+    .slider{
+        display: none;
+    }
+    .text-color-2{
+    color: rgb(43, 82, 68) !important;
+        text-shadow: 4px 0px 5px rgb(47, 46, 46);
+        font-size: 2.5rem;
+    }
+}
