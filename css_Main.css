@@ -260,7 +260,7 @@ body {
 
 }
 #Home{
-    margin-top: 5%;
+    margin-top: -1%;
 }
 
 
@@ -275,7 +275,7 @@ body {
         font-size: 2.5rem;
     }
     #Home{
-        margin-top: 26% !important;
+        margin-top: 22% !important;
     }
     .center{
         text-align: center;
@@ -285,18 +285,22 @@ body {
         float: right !important;
         z-index: 1111000 !important;
         position: fixed;
+        height: 200px;
         top: 50px;
         right: 0px;
         padding: 10px 10px 0px 10px;
         background-color: rgb(232, 238, 234);
         animation: slide_Side_menu_;
-        animation-duration: 2s;
+        animation-duration: 0.5s;
     }
     .item-align.active{
          animation: slide_Side_menu;
-         animation-duration: 2s;
+         animation-duration: 0.5s;
          display: block !important;
 
+    }
+    .spacing_{
+        padding: 15px 5px 3px 5px;
     }
 }
 .nav-link{
