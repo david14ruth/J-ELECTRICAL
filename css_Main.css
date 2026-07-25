@@ -1,3 +1,26 @@
+@keyframes slide_Side_menu_{
+    from {
+         transform: translateX(0)
+    }
+    to{
+        opacity: 0 !important;
+         transform: translateX(100%)
+        
+    }
+   
+}
+@keyframes slide_Side_menu{
+    from {
+          opacity: 0 !important;
+         transform: translateX(50%)
+    }
+    to{
+          opacity: 1 !important;
+         transform: translateX(0)
+        
+    }
+   
+}
 @keyframes slide_Side{
     from {
          transform: translateX(0)
@@ -232,7 +255,14 @@ body {
 .fix{
     position: fixed !important;
     width: 100%;
+    display: flex;
+    top: 0;
+
 }
+#Home{
+    margin-top: 5%;
+}
+
 
 @media (min-width:250px) and (max-width:450px){
 
@@ -240,8 +270,42 @@ body {
         display: none;
     }
     .text-color-2{
-    color: rgb(43, 82, 68) !important;
+        color: rgb(43, 82, 68) !important;
         text-shadow: 4px 0px 5px rgb(47, 46, 46);
         font-size: 2.5rem;
     }
+    #Home{
+        margin-top: 12%;
+    }
+    .center{
+        text-align: center;
+    }
+    .item-align{
+        display: none;
+        float: right !important;
+        z-index: 1111000 !important;
+        position: fixed;
+        top: 50px;
+        right: 0px;
+        padding: 10px 10px 0px 10px;
+        background-color: rgb(232, 238, 234);
+        animation: slide_Side_menu_;
+        animation-duration: 2s;
+    }
+    .item-align.active{
+         animation: slide_Side_menu;
+         animation-duration: 2s;
+         display: block !important;
+
+    }
+}
+.nav-link{
+    color: rgb(27 63 66) !important;
+    border-radius: 55%;
+}
+.nav-link:hover{
+    Color : rgb(9, 9, 9) !important;
+    background-color: rgb(172 240 194);
+    border-radius: 35%;
+    transform: translateY(-10%);
 }
