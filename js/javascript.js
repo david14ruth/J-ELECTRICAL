@@ -38,18 +38,21 @@ setInterval(showSlide, 3000);
 // Change image every 5 seconds
 
 setInterval(showSlide_2, 3000);*/
- let current1 = 0;
+let current1 = 0;
 let cunt = 0;
 function showMenu(){
     const slides = document.querySelectorAll(".item-align");
      
      if(cunt == 0){
+        slides[current1].classList.remove("item-align_");
         slides[current1].classList.add("active");
         cunt ++;
      }
      else{
-         slides[current1].classList.remove("active");
-         cunt = 0;
+        slides[current1].classList.remove("active");
+        slides[current1].classList.add("item-align_");
+
+        cunt = 0;
      }
 }
 
